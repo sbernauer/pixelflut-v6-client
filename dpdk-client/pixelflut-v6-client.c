@@ -187,10 +187,10 @@ static __rte_noreturn void lcore_main(struct main_thread_args *args) {
     struct timeval last_stats_report, now;
     long elapsed_millis;
 
-    struct rte_ether_addr dst_mac_addr = parse_mac("14:a0:f8:8b:1e:e4");
+    struct rte_ether_addr dst_mac_addr = parse_mac("44:f4:77:5b:00:60");
     struct rte_ether_addr src_mac_addr = parse_mac("14:a0:f8:8b:1e:e3");
-    struct in6_addr src_addr = parse_ipv6("fe80::1");
-    struct in6_addr dst_net = parse_ipv6("fe80::");
+    struct in6_addr src_addr = parse_ipv6("fd69:1daa:beb8:cafe::42");
+    struct in6_addr dst_net = parse_ipv6("fd69:1daa:beb8:2::");
 
     char src_addr_str[INET6_ADDRSTRLEN];
     char dst_addr_str[INET6_ADDRSTRLEN];
